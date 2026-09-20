@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title description">
+  <title id="title">NL monogram</title>
+  <desc id="description">Interlocking N and L logo in indigo and violet.</desc>
+  <path
+    d="M27 96V32L82 96V32"
+    fill="none"
+    stroke="#596CFF"
+    stroke-width="16"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M82 32V96H108"
+    fill="none"
+    stroke="#7C5CFC"
+    stroke-width="16"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
