@@ -1,75 +1,287 @@
 <!doctype html>
-<html lang="th">
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="Portfolio of Nathaphat Lappanopakorn — economics, AI, automation, product thinking, and data-driven business projects." />
-<title>Nathaphat Lappanopakorn — Portfolio</title>
-<link rel="icon" href="nl-logo.svg" type="image/svg+xml" />
-<style>
-:root{--bg:#f7f8ff;--surface:#fff;--text:#17182a;--muted:#6a6f83;--line:#e7e8f2;--accent:#6d5dfc;--soft:#eef1ff;--shadow:0 22px 60px rgba(63,55,130,.12);--max:1160px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 36px),var(--max));margin:auto}.header{position:sticky;top:0;z-index:20;background:rgba(247,248,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(231,232,242,.8)}nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-weight:800}.mark{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#596cff,#8b5cf6);color:#fff;font-size:12px}.links{display:flex;gap:22px;align-items:center;font-size:14px}.links a:hover{color:var(--accent)}.cta{padding:10px 14px;border-radius:12px;background:var(--text);color:#fff}.hero{min-height:720px;display:grid;grid-template-columns:1.18fr .82fr;align-items:center;gap:72px;padding:72px 0}.eyebrow{font-size:12px;letter-spacing:.18em;font-weight:800;color:var(--accent);margin:0 0 16px}.hero h1{font-size:clamp(48px,6.8vw,82px);line-height:1.02;letter-spacing:-.055em;margin:0}.hero h1 span{color:var(--accent)}.lead{font-size:18px;color:var(--muted);max-width:700px;margin:24px 0}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 18px;border-radius:14px;border:1px solid var(--line);background:#fff;font-weight:700}.btn.primary{background:var(--accent);color:#fff;border-color:transparent}.visual{position:relative;min-height:520px;display:grid;place-items:center}.orb{width:410px;height:410px;border-radius:50%;position:absolute;background:radial-gradient(circle at 30% 20%,#fff,transparent 30%),linear-gradient(135deg,#dbe5ff,#eee2ff 60%,#faf5ff);box-shadow:var(--shadow)}.portrait{position:relative;z-index:2;width:330px;height:410px;border-radius:34px;background:linear-gradient(160deg,#ffffff 0%,#f3f0ff 50%,#dfe8ff 100%);border:1px solid rgba(109,93,252,.16);overflow:hidden;box-shadow:0 18px 40px rgba(43,38,95,.16)}.portrait img{width:100%;height:100%;display:block;object-fit:cover;object-position:center top}.float{position:absolute;z-index:3;padding:12px 14px;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 34px rgba(38,35,80,.12);font-size:12px}.f1{right:-20px;top:120px}.f2{left:-28px;bottom:100px}.section{padding:96px 0}.soft{background:#f0f2fb}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}.section h2{font-size:clamp(34px,4.2vw,54px);line-height:1.08;letter-spacing:-.04em;margin:0 0 18px}.copy{color:var(--muted)}.facts,.skills,.projects{display:grid;gap:16px}.facts{grid-template-columns:repeat(2,1fr)}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(38,35,80,.05)}.fact strong{font-size:25px;display:block;margin-top:8px}.kicker{font-size:12px;color:var(--muted)}.section-head{text-align:center;max-width:760px;margin:0 auto 44px}.skills{grid-template-columns:repeat(3,1fr)}.skill h3{margin:10px 0}.pillrow{display:flex;gap:7px;flex-wrap:wrap}.pill{font-size:11px;padding:6px 9px;border-radius:999px;background:#f7f7fb;border:1px solid var(--line);color:#62677a}.projects{grid-template-columns:repeat(2,1fr)}.project{padding:0;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}.project:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(38,35,80,.1)}.project-top{position:relative;height:238px;display:block;overflow:hidden;background:linear-gradient(135deg,#e3eaff,#f0e8ff)}.project-top img{width:100%;height:100%;display:block;object-fit:cover;object-position:center top;transition:transform .35s ease}.project-top:hover img{transform:scale(1.025)}.image-label{position:absolute;right:14px;bottom:14px;padding:7px 10px;border-radius:999px;background:rgba(23,24,42,.78);color:#fff;font-size:11px;font-weight:750;letter-spacing:.02em;backdrop-filter:blur(8px)}.project-body{padding:24px}.meta{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.project h3{font-size:24px;line-height:1.2;margin:12px 0}.proof{display:inline-flex;margin-top:8px;color:var(--accent);font-size:13px;font-weight:750}.proof:hover{text-decoration:underline}.contact{padding:52px;border-radius:30px;background:linear-gradient(135deg,#293c89,#6d5dfc 55%,#925cf5);color:#fff;display:grid;grid-template-columns:1.2fr .8fr;gap:40px}.contact p{color:rgba(255,255,255,.8)}.contact a{display:block;padding:14px 16px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.1);border-radius:14px;margin-bottom:10px}.footer{padding:28px 0;color:var(--muted);font-size:13px}@media(max-width:900px){.hero,.grid2,.contact{grid-template-columns:1fr}.hero{padding-top:48px;gap:30px}.visual{min-height:420px}.skills{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.links a:not(.cta){display:none}.hero h1{font-size:48px}.visual{min-height:380px}.orb{width:320px;height:320px}.portrait{width:260px;height:330px}.facts,.skills,.projects{grid-template-columns:1fr}.project-top{height:210px}.section{padding:72px 0}.contact{padding:32px 24px}.f1{right:0}.f2{left:0}}
-</style>
-<style>
-.mark{width:40px;height:40px;border:0;border-radius:0;background:none}.mark img{display:block;width:100%;height:100%}.lang-switch{display:flex;align-items:center;gap:2px;padding:3px;border:1px solid var(--line);border-radius:11px;background:#fff}.lang-switch button{min-width:38px;padding:6px 9px;border:0;border-radius:8px;background:transparent;color:var(--muted);font:inherit;font-size:12px;font-weight:800;cursor:pointer}.lang-switch button[aria-pressed="true"]{background:var(--accent);color:#fff;box-shadow:0 4px 12px rgba(109,93,252,.22)}.lang-switch button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}@media(max-width:650px){.links{gap:8px}.lang-switch button{min-width:34px;padding-inline:7px}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nathaphat Lappanopakorn — economics graduate seeking junior roles in Automation or Business Operations, with internship experience building LINE chatbot workflows using n8n." />
+  <meta name="theme-color" content="#14253d" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo-nl.svg" />
+  <title>Nathaphat Lappanopakorn — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="header"><nav class="container"><a class="brand" href="#home"><span class="mark"><img src="nl-logo.svg" alt="" width="40" height="40" /></span>Nathaphat</a><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a class="cta" href="#contact">Contact</a><div class="lang-switch" role="group" aria-label="เลือกภาษา"><button type="button" data-lang="th" aria-pressed="true">ไทย</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div></div></nav></header>
-<main>
-<section class="hero container" id="home"><div><p class="eyebrow">ECONOMICS × AUTOMATION × PRODUCT THINKING</p><h1>Hi, I’m <span>Nathaphat.</span><br>I turn business problems into practical digital workflows.</h1><p class="lead">Economics graduate focused on AI, workflow automation, digital marketing, and data-driven problem solving — connecting business insight with tools that make work simpler and faster.</p><div class="actions"><a class="btn primary" href="#work">View my work ↗</a><a class="btn" href="mailto:Lap.natthaphat@gmail.com">Email me</a></div></div><div class="visual"><div class="orb"></div><div class="portrait"><img src="headshot.png" alt="Portrait of Nathaphat Lappanopakorn" width="449" height="561" fetchpriority="high" /></div><div class="float f1"><b>Open to opportunities</b><br>Automation · Product · Business</div><div class="float f2"><b>Workflow builder</b><br>n8n · Webhooks · AI prompts</div></div></section>
-<section class="section soft" id="about"><div class="container grid2"><div><p class="eyebrow">ABOUT ME</p><h2>Business thinking with a builder mindset.</h2><p class="copy">I enjoy turning market insight, consumer behavior, and operational pain points into clearer systems. My background spans economics, digital marketing, automation, product development, and visual communication.</p><p class="copy">My projects range from chatbot workflow automation to economic research, product positioning, and data storytelling — with a consistent focus on making complex information usable.</p></div><div class="facts"><div class="card fact"><span class="kicker">Education</span><strong>B.Econ</strong><span>Khon Kaen University</span></div><div class="card fact"><span class="kicker">Selected work</span><strong>5 Projects</strong><span>Applied &amp; academic work</span></div><div class="card fact"><span class="kicker">Core focus</span><strong>AI + Automation</strong><span>Prompt design &amp; workflows</span></div><div class="card fact"><span class="kicker">Languages</span><strong>TH / EN</strong><span>Native / Intermediate</span></div></div></div></section>
-<section class="section container" id="skills"><div class="section-head"><p class="eyebrow">MY SKILLS</p><h2>Tools I work with</h2><p class="copy">Grouped by how I use them to solve business and product problems.</p></div><div class="skills"><div class="card skill"><h3>AI &amp; Prompt Engineering</h3><div class="pillrow"><span class="pill">Chatbot Prompt Design</span><span class="pill">Response Optimization</span></div></div><div class="card skill"><h3>Automation &amp; Workflow</h3><div class="pillrow"><span class="pill">n8n</span><span class="pill">Webhook Integration</span><span class="pill">Workflow Automation</span></div></div><div class="card skill"><h3>ERP &amp; Business Systems</h3><div class="pillrow"><span class="pill">Odoo</span></div></div><div class="card skill"><h3>Data &amp; Collaboration</h3><div class="pillrow"><span class="pill">Google Sheets</span><span class="pill">Market Analysis</span><span class="pill">Consumer Behavior</span></div></div><div class="card skill"><h3>Design &amp; Presentation</h3><div class="pillrow"><span class="pill">Canva</span><span class="pill">PowerPoint</span><span class="pill">Infographic Design</span></div></div><div class="card skill"><h3>Programming</h3><div class="pillrow"><span class="pill">Python — Basic</span></div></div></div></section>
-<section class="section soft" id="work"><div class="container"><div class="section-head"><p class="eyebrow">SELECTED WORK</p><h2>Projects &amp; experience</h2><p class="copy">Automation, economic analysis, product development, and data communication.</p></div><div class="projects"><article class="card project"><a class="project-top" href="chatbot-workflow.png" target="_blank" rel="noopener" aria-label="Open the full chatbot automation workflow image"><img src="chatbot-workflow.png" alt="n8n chatbot automation workflow with AI agents, databases, notifications, and API export" width="834" height="366" loading="lazy" /><span class="image-label">View visual ↗</span></a><div class="project-body"><div class="meta">Apr 2025 – May 2025</div><h3>Chatbot Automation Internship</h3><p class="copy">Designed a LINE-based chatbot automation system using n8n, AI prompt structures, webhooks, and Google Sheets, with escalation to human support when automation was insufficient.</p><a class="proof" href="internship-certificate.png" target="_blank" rel="noopener">View internship certificate ↗</a></div></article><article class="card project"><a class="project-top" href="household-debt.png" target="_blank" rel="noopener" aria-label="Open the full Thailand household debt project cover"><img src="household-debt.png" alt="Thailand Household Debt magazine cover" width="425" height="600" loading="lazy" /><span class="image-label">View visual ↗</span></a><div class="project-body"><div class="meta">Jun – Nov 2024</div><h3>Household Debt Analysis</h3><p class="copy">Researched Thailand’s household debt and transformed complex financial data into accessible infographic and magazine-style storytelling.</p></div></article><article class="card project"><a class="project-top" href="germinated-rice.jpeg" target="_blank" rel="noopener" aria-label="Open the full germinated brown rice project visual"><img src="germinated-rice.jpeg" alt="Germinated Brown Rice product development presentation cover" width="576" height="324" loading="lazy" /><span class="image-label">View visual ↗</span></a><div class="project-body"><div class="meta">Nov 2025 – Mar 2026</div><h3>Germinated Brown Rice Product Development</h3><p class="copy">Worked on consumer analysis, packaging, positioning, branding strategy, and market-fit communication for a health-conscious community product.</p></div></article><article class="card project"><a class="project-top" href="ev-trade.png" target="_blank" rel="noopener" aria-label="Open the full Thailand–China EV trade analysis infographic"><img src="ev-trade.png" alt="Thailand–China EV Trade Pattern Analysis infographic" width="674" height="954" loading="lazy" /><span class="image-label">View visual ↗</span></a><div class="project-body"><div class="meta">Nov 2025 – Mar 2026</div><h3>Thailand–China EV Trade Analysis</h3><p class="copy">Analyzed trade structure, comparative advantage, cooperation frameworks, barriers, and implications for Thailand’s EV industry.</p></div></article><article class="card project"><a class="project-top" href="air-travel.png" target="_blank" rel="noopener" aria-label="Open the full international air travel demand project visual"><img src="air-travel.png" alt="International air travel demand analysis presentation cover for Khon Kaen Airport" width="576" height="324" loading="lazy" /><span class="image-label">View visual ↗</span></a><div class="project-body"><div class="meta">Jun 2025 – Mar 2026</div><h3>International Air Travel Demand Analysis</h3><p class="copy">Studied passenger demand, market potential, travel corridors, and strategic recommendations for Khon Kaen Airport’s GMS route development.</p></div></article></div></div></section>
-<section class="section container" id="contact"><div class="contact"><div><p class="eyebrow" style="color:#ddd9ff">CONTACT</p><h2>Let’s build something useful.</h2><p>I’m interested in opportunities across automation, AI-enabled workflows, product operations, digital business, and data-driven strategy.</p></div><div><a href="mailto:Lap.natthaphat@gmail.com"><small>Email</small><br><b>Lap.natthaphat@gmail.com</b></a><a href="tel:+66966625606"><small>Phone</small><br><b>096-662-5606</b></a></div></div></section>
-</main>
-<footer class="footer"><div class="container">© 2026 Nathaphat Lappanopakorn · Ratchaburi, Thailand</div></footer>
-<script>
-const translations={
-th:{
-title:"Nathaphat Lappanopakorn — พอร์ตโฟลิโอ",
-description:"พอร์ตโฟลิโอของ Nathaphat Lappanopakorn ครอบคลุมเศรษฐศาสตร์ AI ระบบอัตโนมัติ แนวคิดผลิตภัณฑ์ และโครงการธุรกิจที่ขับเคลื่อนด้วยข้อมูล",
-content:{
-'a[href="#about"]':"เกี่ยวกับฉัน",'a[href="#skills"]':"ทักษะ",'a[href="#work"]':"ผลงาน",'a[href="#contact"]':"ติดต่อ",
-'.hero .eyebrow':"เศรษฐศาสตร์ × ระบบอัตโนมัติ × แนวคิดผลิตภัณฑ์",
-'.hero h1':"สวัสดีครับ ผม <span>Nathaphat</span><br>ผมเปลี่ยนโจทย์ธุรกิจให้เป็นเวิร์กโฟลว์ดิจิทัลที่ใช้งานได้จริง",
-'.hero .lead':"บัณฑิตเศรษฐศาสตร์ที่สนใจ AI ระบบอัตโนมัติ การตลาดดิจิทัล และการแก้ปัญหาด้วยข้อมูล โดยเชื่อมมุมมองทางธุรกิจกับเครื่องมือที่ช่วยให้งานง่ายและรวดเร็วยิ่งขึ้น",
-'.actions .primary':"ดูผลงาน ↗",'.actions .btn:not(.primary)':"ส่งอีเมล",
-'.f1':"<b>พร้อมรับโอกาสใหม่</b><br>ระบบอัตโนมัติ · ผลิตภัณฑ์ · ธุรกิจ",'.f2':"<b>นักสร้างเวิร์กโฟลว์</b><br>n8n · Webhooks · AI Prompts",
-'#about .eyebrow':"เกี่ยวกับฉัน",'#about h2':"คิดแบบธุรกิจ พร้อมลงมือสร้างจริง",'#about .copy:nth-of-type(2)':"ผมชอบเปลี่ยนข้อมูลเชิงตลาด พฤติกรรมผู้บริโภค และปัญหาในการทำงานให้เป็นระบบที่ชัดเจนขึ้น ประสบการณ์ของผมครอบคลุมเศรษฐศาสตร์ การตลาดดิจิทัล ระบบอัตโนมัติ การพัฒนาผลิตภัณฑ์ และการสื่อสารด้วยภาพ",'#about .copy:nth-of-type(3)':"ผลงานของผมมีตั้งแต่ระบบแชตบอตอัตโนมัติ งานวิจัยเศรษฐศาสตร์ การวางตำแหน่งผลิตภัณฑ์ ไปจนถึงการเล่าเรื่องด้วยข้อมูล โดยมุ่งทำให้ข้อมูลที่ซับซ้อนนำไปใช้ได้จริง",
-'.fact:nth-child(1) .kicker':"การศึกษา",'.fact:nth-child(1) strong':"เศรษฐศาสตรบัณฑิต",'.fact:nth-child(1) span:last-child':"มหาวิทยาลัยขอนแก่น",'.fact:nth-child(2) .kicker':"ผลงานที่คัดเลือก",'.fact:nth-child(2) strong':"5 โครงการ",'.fact:nth-child(2) span:last-child':"งานประยุกต์และงานวิชาการ",'.fact:nth-child(3) .kicker':"ความเชี่ยวชาญหลัก",'.fact:nth-child(3) span:last-child':"การออกแบบพรอมต์และเวิร์กโฟลว์",'.fact:nth-child(4) .kicker':"ภาษา",'.fact:nth-child(4) strong':"ไทย / อังกฤษ",'.fact:nth-child(4) span:last-child':"ภาษาแม่ / ระดับกลาง",
-'#skills .eyebrow':"ทักษะของฉัน",'#skills h2':"เครื่องมือที่ใช้งาน",'#skills .section-head .copy':"จัดกลุ่มตามวิธีที่ผมนำไปใช้แก้โจทย์ด้านธุรกิจและผลิตภัณฑ์",
-'.skill:nth-child(1) h3':"AI และการออกแบบพรอมต์",'.skill:nth-child(1) .pill:nth-child(1)':"ออกแบบพรอมต์แชตบอต",'.skill:nth-child(1) .pill:nth-child(2)':"ปรับคุณภาพคำตอบ",'.skill:nth-child(2) h3':"ระบบอัตโนมัติและเวิร์กโฟลว์",'.skill:nth-child(2) .pill:nth-child(2)':"เชื่อมต่อ Webhook",'.skill:nth-child(2) .pill:nth-child(3)':"ระบบงานอัตโนมัติ",'.skill:nth-child(3) h3':"ERP และระบบธุรกิจ",'.skill:nth-child(4) h3':"ข้อมูลและการทำงานร่วมกัน",'.skill:nth-child(4) .pill:nth-child(2)':"วิเคราะห์ตลาด",'.skill:nth-child(4) .pill:nth-child(3)':"พฤติกรรมผู้บริโภค",'.skill:nth-child(5) h3':"การออกแบบและการนำเสนอ",'.skill:nth-child(5) .pill:nth-child(3)':"ออกแบบอินโฟกราฟิก",'.skill:nth-child(6) h3':"การเขียนโปรแกรม",'.skill:nth-child(6) .pill':"Python — พื้นฐาน",
-'#work .eyebrow':"ผลงานที่คัดเลือก",'#work h2':"โครงการและประสบการณ์",'#work .section-head .copy':"ระบบอัตโนมัติ การวิเคราะห์เศรษฐกิจ การพัฒนาผลิตภัณฑ์ และการสื่อสารข้อมูล",
-'.image-label':"ดูภาพเต็ม ↗",'.project:nth-child(1) .meta':"เม.ย. 2568 – พ.ค. 2568",'.project:nth-child(1) h3':"ฝึกงานด้านระบบแชตบอตอัตโนมัติ",'.project:nth-child(1) .copy':"ออกแบบระบบแชตบอต LINE ด้วย n8n โครงสร้างพรอมต์ AI เว็บฮุก และ Google Sheets พร้อมส่งต่อให้เจ้าหน้าที่เมื่อระบบอัตโนมัติไม่สามารถตอบโจทย์ได้",'.project:nth-child(1) .proof':"ดูใบรับรองการฝึกงาน ↗",'.project:nth-child(2) .meta':"มิ.ย. – พ.ย. 2567",'.project:nth-child(2) h3':"การวิเคราะห์หนี้ครัวเรือนไทย",'.project:nth-child(2) .copy':"ศึกษาหนี้ครัวเรือนของไทยและถ่ายทอดข้อมูลทางการเงินที่ซับซ้อนให้อยู่ในรูปแบบอินโฟกราฟิกและนิตยสารที่เข้าใจง่าย",'.project:nth-child(3) .meta':"พ.ย. 2568 – มี.ค. 2569",'.project:nth-child(3) h3':"การพัฒนาผลิตภัณฑ์ข้าวกล้องงอก",'.project:nth-child(3) .copy':"วิเคราะห์ผู้บริโภค ออกแบบบรรจุภัณฑ์ วางตำแหน่งผลิตภัณฑ์ กลยุทธ์แบรนด์ และการสื่อสารให้เหมาะกับตลาดคนรักสุขภาพในชุมชน",'.project:nth-child(4) .meta':"พ.ย. 2568 – มี.ค. 2569",'.project:nth-child(4) h3':"การวิเคราะห์การค้ารถยนต์ไฟฟ้าไทย–จีน",'.project:nth-child(4) .copy':"วิเคราะห์โครงสร้างการค้า ความได้เปรียบเชิงเปรียบเทียบ กรอบความร่วมมือ อุปสรรค และผลกระทบต่ออุตสาหกรรมรถยนต์ไฟฟ้าของไทย",'.project:nth-child(5) .meta':"มิ.ย. 2568 – มี.ค. 2569",'.project:nth-child(5) h3':"การวิเคราะห์อุปสงค์การเดินทางทางอากาศระหว่างประเทศ",'.project:nth-child(5) .copy':"ศึกษาอุปสงค์ผู้โดยสาร ศักยภาพตลาด เส้นทางการเดินทาง และข้อเสนอเชิงกลยุทธ์สำหรับการพัฒนาเส้นทาง GMS ของท่าอากาศยานขอนแก่น",
-'#contact .eyebrow':"ติดต่อ",'#contact h2':"มาสร้างสิ่งที่มีประโยชน์ไปด้วยกัน",'#contact p:not(.eyebrow)':"ผมสนใจโอกาสด้านระบบอัตโนมัติ เวิร์กโฟลว์ที่ใช้ AI การดำเนินงานผลิตภัณฑ์ ธุรกิจดิจิทัล และกลยุทธ์ที่ขับเคลื่อนด้วยข้อมูล",'#contact small:first-child':"อีเมล",'#contact a:nth-child(2) small':"โทรศัพท์",
-'.footer .container':"© 2026 Nathaphat Lappanopakorn · ราชบุรี ประเทศไทย"
-}},
-en:{
-title:"Nathaphat Lappanopakorn — Portfolio",
-description:"Portfolio of Nathaphat Lappanopakorn — economics, AI, automation, product thinking, and data-driven business projects.",
-content:{
-'a[href="#about"]':"About",'a[href="#skills"]':"Skills",'a[href="#work"]':"Work",'a[href="#contact"]':"Contact",
-'.hero .eyebrow':"ECONOMICS × AUTOMATION × PRODUCT THINKING",'.hero h1':"Hi, I’m <span>Nathaphat.</span><br>I turn business problems into practical digital workflows.",'.hero .lead':"Economics graduate focused on AI, workflow automation, digital marketing, and data-driven problem solving — connecting business insight with tools that make work simpler and faster.",'.actions .primary':"View my work ↗",'.actions .btn:not(.primary)':"Email me",'.f1':"<b>Open to opportunities</b><br>Automation · Product · Business",'.f2':"<b>Workflow builder</b><br>n8n · Webhooks · AI prompts",
-'#about .eyebrow':"ABOUT ME",'#about h2':"Business thinking with a builder mindset.",'#about .copy:nth-of-type(2)':"I enjoy turning market insight, consumer behavior, and operational pain points into clearer systems. My background spans economics, digital marketing, automation, product development, and visual communication.",'#about .copy:nth-of-type(3)':"My projects range from chatbot workflow automation to economic research, product positioning, and data storytelling — with a consistent focus on making complex information usable.",
-'.fact:nth-child(1) .kicker':"Education",'.fact:nth-child(1) strong':"B.Econ",'.fact:nth-child(1) span:last-child':"Khon Kaen University",'.fact:nth-child(2) .kicker':"Selected work",'.fact:nth-child(2) strong':"5 Projects",'.fact:nth-child(2) span:last-child':"Applied &amp; academic work",'.fact:nth-child(3) .kicker':"Core focus",'.fact:nth-child(3) span:last-child':"Prompt design &amp; workflows",'.fact:nth-child(4) .kicker':"Languages",'.fact:nth-child(4) strong':"TH / EN",'.fact:nth-child(4) span:last-child':"Native / Intermediate",
-'#skills .eyebrow':"MY SKILLS",'#skills h2':"Tools I work with",'#skills .section-head .copy':"Grouped by how I use them to solve business and product problems.",'.skill:nth-child(1) h3':"AI &amp; Prompt Engineering",'.skill:nth-child(1) .pill:nth-child(1)':"Chatbot Prompt Design",'.skill:nth-child(1) .pill:nth-child(2)':"Response Optimization",'.skill:nth-child(2) h3':"Automation &amp; Workflow",'.skill:nth-child(2) .pill:nth-child(2)':"Webhook Integration",'.skill:nth-child(2) .pill:nth-child(3)':"Workflow Automation",'.skill:nth-child(3) h3':"ERP &amp; Business Systems",'.skill:nth-child(4) h3':"Data &amp; Collaboration",'.skill:nth-child(4) .pill:nth-child(2)':"Market Analysis",'.skill:nth-child(4) .pill:nth-child(3)':"Consumer Behavior",'.skill:nth-child(5) h3':"Design &amp; Presentation",'.skill:nth-child(5) .pill:nth-child(3)':"Infographic Design",'.skill:nth-child(6) h3':"Programming",'.skill:nth-child(6) .pill':"Python — Basic",
-'#work .eyebrow':"SELECTED WORK",'#work h2':"Projects &amp; experience",'#work .section-head .copy':"Automation, economic analysis, product development, and data communication.",'.image-label':"View visual ↗",'.project:nth-child(1) .meta':"Apr 2025 – May 2025",'.project:nth-child(1) h3':"Chatbot Automation Internship",'.project:nth-child(1) .copy':"Designed a LINE-based chatbot automation system using n8n, AI prompt structures, webhooks, and Google Sheets, with escalation to human support when automation was insufficient.",'.project:nth-child(1) .proof':"View internship certificate ↗",'.project:nth-child(2) .meta':"Jun – Nov 2024",'.project:nth-child(2) h3':"Household Debt Analysis",'.project:nth-child(2) .copy':"Researched Thailand’s household debt and transformed complex financial data into accessible infographic and magazine-style storytelling.",'.project:nth-child(3) .meta':"Nov 2025 – Mar 2026",'.project:nth-child(3) h3':"Germinated Brown Rice Product Development",'.project:nth-child(3) .copy':"Worked on consumer analysis, packaging, positioning, branding strategy, and market-fit communication for a health-conscious community product.",'.project:nth-child(4) .meta':"Nov 2025 – Mar 2026",'.project:nth-child(4) h3':"Thailand–China EV Trade Analysis",'.project:nth-child(4) .copy':"Analyzed trade structure, comparative advantage, cooperation frameworks, barriers, and implications for Thailand’s EV industry.",'.project:nth-child(5) .meta':"Jun 2025 – Mar 2026",'.project:nth-child(5) h3':"International Air Travel Demand Analysis",'.project:nth-child(5) .copy':"Studied passenger demand, market potential, travel corridors, and strategic recommendations for Khon Kaen Airport’s GMS route development.",
-'#contact .eyebrow':"CONTACT",'#contact h2':"Let’s build something useful.",'#contact p:not(.eyebrow)':"I’m interested in opportunities across automation, AI-enabled workflows, product operations, digital business, and data-driven strategy.",'#contact small:first-child':"Email",'#contact a:nth-child(2) small':"Phone",'.footer .container':"© 2026 Nathaphat Lappanopakorn · Ratchaburi, Thailand"
-}}};
+  <a class="skip-link" href="#main">Skip to content</a>
 
-function setLanguage(language){
-const selected=translations[language]||translations.th;
-document.documentElement.lang=language;
-document.title=selected.title;
-document.querySelector('meta[name="description"]').setAttribute("content",selected.description);
-Object.entries(selected.content).forEach(([selector,value])=>document.querySelectorAll(selector).forEach(element=>element.innerHTML=value));
-document.querySelectorAll("[data-lang]").forEach(button=>button.setAttribute("aria-pressed",String(button.dataset.lang===language)));
-document.querySelector(".lang-switch").setAttribute("aria-label",language==="th"?"เลือกภาษา":"Choose language");
-document.querySelector(".portrait img").alt=language==="th"?"ภาพถ่ายของ Nathaphat Lappanopakorn":"Portrait of Nathaphat Lappanopakorn";
-}
+  <header class="site-header" id="home">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Nathaphat Lappanopakorn home">
+        <span class="brand-mark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none"><rect width="72" height="72" rx="18" fill="#14253D"/><path class="logo-n" d="M15 50V22L35 50V22" stroke="#F4F5F7" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><path class="logo-l" d="M46 22V50H59" stroke="#B59A65" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="brand-name">Nathaphat<span class="brand-surname">Lappanopakorn</span></span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#documents">Documents</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="documents/Resume_Nathaphat_Lappanopakorn.pdf" download>Download Resume</a>
+      </div>
+    </nav>
+  </header>
 
-document.querySelectorAll("[data-lang]").forEach(button=>button.addEventListener("click",()=>setLanguage(button.dataset.lang)));
-setLanguage("th");
-</script>
+  <main id="main">
+    <section class="hero section container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title"><span class="intro-name">Nathaphat Lappanopakorn</span>Seeking junior roles in<br /><span>Automation &amp;<br />Business Operations.</span></h1>
+        <p class="hero-lead">I’m an economics graduate with internship experience building LINE chatbot workflows using n8n, AI prompts, and Google Sheets. I’m looking to help teams handle recurring tasks and organize day-to-day business processes.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#chatbot">Explore my chatbot project</a>
+          <a class="button button-secondary" href="documents/Resume_Nathaphat_Lappanopakorn.pdf" download>Download Resume</a>
+        </div>
+        <p class="hero-note">Khon Kaen University · Bachelor of Economics, 2026<br />Based in Ratchaburi, Thailand</p>
+      </div>
+
+      <figure class="hero-visual">
+        <img src="assets/headshot.png" width="449" height="561" alt="Portrait of Nathaphat Lappanopakorn" fetchpriority="high" />
+        <figcaption><span>Nathaphat “Ball” Lappanopakorn</span><span>Economics · Automation · Research</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="section section-soft" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-copy">
+          <h2 id="about-title">About me</h2>
+          <p>I’m Nathaphat, or Ball. I studied economics at Khon Kaen University, with a module in Corporate Logistics and Development. My interests include AI automation, product development, business strategy, and digital marketing.</p>
+          <p>During my internship, I built LINE chatbot workflows with n8n. I also built a product website with a mixing-rate calculator for FLAVOGEN, an agricultural brand. At university, I worked on household debt research, community product development, EV trade, and air travel demand. These projects gave me experience with both analysis and presenting findings.</p>
+          <a class="text-link" href="#contact">Let’s work together <span aria-hidden="true">→</span></a>
+        </div>
+
+        <dl class="profile-details">
+          <div><dt>Education</dt><dd>Bachelor of Economics<br /><span>Khon Kaen University · 2023–2026</span></dd></div>
+          <div><dt>Study module</dt><dd>Corporate Logistics and Development</dd></div>
+          <div><dt>Graduated</dt><dd>7 May 2026</dd></div>
+          <div><dt>Languages</dt><dd>Thai — native<br />English — intermediate</dd></div>
+          <div><dt>Beyond work</dt><dd>Playing music<br /><span>A creative outlet for focus and self-expression</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="work-title">Projects & experience</h2>
+          <p>One internship, one client website, and four academic projects, covering workflow automation, web development, research, and product development.</p>
+        </div>
+
+        <article class="feature-project chatbot-case" id="chatbot" aria-labelledby="chatbot-title">
+          <div class="chatbot-intro">
+            <div class="feature-copy">
+              <div class="project-meta"><span>Internship · Klangone</span><span>April – May 2025</span></div>
+              <h3 id="chatbot-title">LINE chatbot: from customer question to support handoff</h3>
+              <p>During my internship, I built a chatbot workflow to handle recurring customer questions on LINE. It connected incoming messages with AI prompts and business information, with alerts for questions that needed human support.</p>
+              <div class="project-tags" aria-label="Project tools"><span>LINE</span><span>n8n</span><span>AI prompts</span><span>Webhooks</span><span>Google Sheets</span></div>
+            </div>
+            <div class="chatbot-brief">
+              <h4>The problem</h4>
+              <p>Recurring inquiries meant repeated manual replies. Questions the chatbot could not resolve still needed to reach a member of the support team.</p>
+              <h4>My role</h4>
+              <p>I built the n8n workflows, structured the AI prompts, connected webhooks and Google Sheets, and added a notification path for human support.</p>
+            </div>
+          </div>
+
+          <figure class="chatbot-workflow">
+            <a class="image-link" href="assets/chatbot-workflow.png" target="_blank" rel="noopener" aria-label="Open full-size n8n chatbot workflow image in a new tab">
+              <img src="assets/chatbot-workflow.png" width="834" height="366" alt="n8n workflow showing a webhook input, AI agents connected to memory and data sources, a notification branch, and an HTTP response path" loading="lazy" />
+              <span>Open full-size workflow image</span>
+            </a>
+            <figcaption>The workflow from my internship. The image shows the input, AI agents, connected data sources, notification branch, and response path.</figcaption>
+          </figure>
+
+          <section class="chatbot-walkthrough" aria-labelledby="chatbot-flow-title">
+            <h4 id="chatbot-flow-title">How a question moves through the system</h4>
+            <p class="chatbot-flow-note">A simplified walkthrough of the workflow above.</p>
+            <ol class="chatbot-steps">
+              <li><h5>Receive the message</h5><p>A customer sends a question on LINE. A webhook brings the message into n8n for processing.</p></li>
+              <li><h5>Prepare an answer</h5><p>The workflow uses AI prompts and connected data sources to handle the question. AI agents, memory, and database tools are visible in the diagram.</p></li>
+              <li><h5>Return a response</h5><p>The response path processes the output and sends it through an HTTP request.</p></li>
+            </ol>
+            <div class="chatbot-handoff"><h5>When the question needs a person</h5><p>A separate notification path alerts human support when the chatbot cannot resolve an inquiry. The workflow image shows this branch leading to a Telegram notification node.</p></div>
+          </section>
+
+          <div class="chatbot-outcome">
+            <div><h4>What I delivered</h4><p>A LINE chatbot workflow combining AI prompts, data connections, and support notifications. It covered both recurring questions and a route to human support.</p></div>
+            <a class="button button-secondary" href="documents/Internship_Certificate_Nathaphat.png" download>Download internship certificate</a>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card" id="flavogen">
+            <div class="project-image"><a class="image-link" href="assets/flavogen-website.jpg" target="_blank" rel="noopener" aria-label="Open full-size screenshot of the FLAVOGEN website in a new tab"><img src="assets/flavogen-website.jpg" alt="FLAVOGEN website home page with a Thai headline, navigation to products and the mixing-rate calculator, and two product packages" loading="lazy" /><span>View full screenshot</span></a></div>
+            <div class="project-card-body">
+              <div class="project-meta"><span>Client project</span><span>Oct – Nov 2026</span></div>
+              <h3>FLAVOGEN Agricultural Product Website</h3>
+              <p>Built a Thai-language product website for an agricultural brand, with a mixing-rate calculator that estimates product, water, and cost per rai for each crop.</p>
+              <div class="project-files" aria-label="Live website: FLAVOGEN">
+                <p>Live website · flavogen-th.vercel.app</p>
+                <div class="project-file-actions"><a class="text-link" href="https://flavogen-th.vercel.app/" target="_blank" rel="noopener">Visit live website<span class="sr-only">: FLAVOGEN (opens in a new tab)</span></a></div>
+              </div>
+              <details class="project-details"><summary>Read project details</summary><dl><dt>Context</dt><dd>The client needed one place for farmers to understand its FLAVOGEN and DINDEE products, choose the right use for their crop, and contact the team.</dd><dt>My contribution</dt><dd>Designed and built the site in HTML, CSS, and JavaScript, including the calculator, product size selector, certificates, reviews, and FAQ. Kept all content in one data file with an editing guide so the client can update it without changing code.</dd><dt>Output</dt><dd>A responsive product website deployed on Vercel.</dd></dl></details>
+            <div class="project-tags"><span>Web Development</span><span>Calculator</span><span>Client Work</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="debt-gallery" role="region" aria-roledescription="carousel" aria-label="Household Debt Analysis: magazine and infographic">
+              <div class="debt-format-picker" hidden aria-label="Choose project format"><button type="button" data-debt-format="0" aria-pressed="true">Magazine</button><button type="button" data-debt-format="1" aria-pressed="false">Infographic</button></div>
+              <p class="debt-swipe-hint">Two formats — swipe the image or use the arrows</p>
+              <div class="debt-slides" tabindex="0" aria-label="Project formats. Scroll horizontally or use the arrow buttons.">
+                <figure class="debt-slide" role="group" aria-roledescription="slide" aria-label="1 of 2: Magazine">
+                  <a href="documents/Household_Debt_Magazine.pdf" target="_blank" rel="noopener" aria-label="Read Household Debt magazine in a new tab"><img src="assets/household-debt.png" alt="Thailand Household Debt magazine cover" loading="lazy" /></a>
+                  <figcaption><strong>Magazine</strong><span>PDF · 25 pages · 39.0 MB</span><div><a href="documents/Household_Debt_Magazine.pdf" target="_blank" rel="noopener">Read magazine</a><a href="documents/Household_Debt_Magazine.pdf" download>Download magazine</a></div></figcaption>
+                </figure>
+                <figure class="debt-slide" role="group" aria-roledescription="slide" aria-label="2 of 2: Infographic">
+                  <a href="documents/Household_Debt_Infographic.png" target="_blank" rel="noopener" aria-label="View full household debt infographic in a new tab"><img src="documents/Household_Debt_Infographic.png" alt="Household debt infographic with charts on borrowing, income, debt trends, and economic impacts" loading="lazy" /></a>
+                  <figcaption><strong>Infographic</strong><span>PNG · 0.6 MB</span><div><a href="documents/Household_Debt_Infographic.png" target="_blank" rel="noopener">View infographic</a><a href="documents/Household_Debt_Infographic.png" download>Download infographic</a></div></figcaption>
+                </figure>
+              </div>
+              <div class="debt-gallery-controls" hidden>
+                <button type="button" data-debt-prev aria-label="Previous format"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+                <span data-debt-status role="status" aria-live="polite">1 / 2 · Magazine</span>
+                <button type="button" data-debt-next aria-label="Next format"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-meta"><span>Academic project</span><span>Jun – Nov 2024</span></div>
+              <h3>Household Debt Analysis</h3>
+              <p>Researched Thailand’s household debt and presented the findings through infographics and magazine layouts for a general audience.</p>
+              <details class="project-details"><summary>Read project details</summary><dl><dt>Context</dt><dd>Make Thailand’s household debt research understandable to a general audience.</dd><dt>My contribution</dt><dd>Researched household debt data, designed infographic and magazine layouts, and presented the findings to a Faculty of Economics audience.</dd><dt>Output</dt><dd>Infographic and magazine-style research communication.</dd></dl></details>
+            <div class="project-tags"><span>Research</span><span>Data Storytelling</span><span>Infographic</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image"><a class="image-link" href="assets/germinated-rice.jpeg" target="_blank" rel="noopener" aria-label="Open full image: Germinated Brown Rice project visual"><img src="assets/germinated-rice.jpeg" alt="Germinated Brown Rice project visual" loading="lazy" /><span>View full image</span></a></div>
+            <div class="project-card-body">
+              <div class="project-meta"><span>Academic project</span><span>Nov 2025 – Mar 2026</span></div>
+              <h3>Germinated Brown Rice Product Development</h3>
+              <p>Analyzed health-conscious consumers and contributed to packaging, product positioning, and branding for a community germinated brown rice product.</p>
+              <div class="project-files" aria-label="Full project: Germinated Brown Rice Product Development">
+                <p>Full project · PDF · 28 pages · 87.0 MB</p>
+                <div class="project-file-actions"><a class="text-link" href="documents/Germinated_Brown_Rice_Presentation.pdf" target="_blank" rel="noopener">Read full project<span class="sr-only">: Germinated Brown Rice Product Development (opens in a new tab)</span></a><a class="text-link" href="documents/Germinated_Brown_Rice_Presentation.pdf" download>Download PDF<span class="sr-only">: Germinated Brown Rice Product Development</span></a></div>
+              </div>
+              <details class="project-details"><summary>Read project details</summary><dl><dt>Context</dt><dd>Explore how a community rice product could reach health-conscious consumers, including people concerned about non-communicable diseases.</dd><dt>My contribution</dt><dd>Analyzed consumer behavior, designed packaging formats, and contributed to product positioning, branding, and marketing materials.</dd><dt>Output</dt><dd>Packaging concepts and marketing materials connecting community products with consumer needs.</dd></dl></details>
+            <div class="project-tags"><span>Product</span><span>Branding</span><span>Consumer Analysis</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image project-image-tall"><a class="image-link" href="assets/ev-trade.png" target="_blank" rel="noopener" aria-label="Open full image: Thailand-China EV trade analysis infographic"><img src="assets/ev-trade.png" alt="Thailand-China EV trade analysis infographic" loading="lazy" /><span>View full image</span></a></div>
+            <div class="project-card-body">
+              <div class="project-meta"><span>Team research project</span><span>Nov 2025 – Mar 2026</span></div>
+              <h3>Thailand–China EV Trade Analysis</h3>
+              <p>Worked with a research team to examine Thailand–China EV trade, comparative advantage, economic cooperation, and barriers affecting the industry.</p>
+              <div class="project-files" aria-label="Full EV trade infographic"><p>Full infographic · PDF · 1 page · 5.7 MB</p><div class="project-file-actions"><a class="text-link" href="documents/Thailand_China_EV_Trade_Infographic.pdf" target="_blank" rel="noopener">Read full EV infographic<span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="documents/Thailand_China_EV_Trade_Infographic.pdf" download>Download EV PDF</a></div></div>
+              <details class="project-details"><summary>Read project details</summary><dl><dt>Context</dt><dd>Understand trade patterns and their implications for Thailand’s EV industry.</dd><dt>My contribution</dt><dd>Collaborated on research into comparative advantage, cooperation frameworks, trade barriers, and industry impacts.</dd><dt>Output</dt><dd>Trade analysis and policy recommendations for strategic positioning.</dd></dl></details>
+            <div class="project-tags"><span>Economics</span><span>Trade Analysis</span><span>Strategy</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image"><a class="image-link" href="assets/air-travel.png" target="_blank" rel="noopener" aria-label="Open full image: International air travel demand analysis visual"><img src="assets/air-travel.png" alt="International air travel demand analysis visual" loading="lazy" /><span>View full image</span></a></div>
+            <div class="project-card-body">
+              <div class="project-meta"><span>Academic project</span><span>Jun 2025 – Mar 2026</span></div>
+              <h3>International Air Travel Demand Analysis</h3>
+              <p>Studied international travel demand from Khon Kaen, focusing on passenger behavior, market potential, and possible routes within the Greater Mekong Subregion.</p>
+              <div class="project-files" aria-label="Full project: International Air Travel Demand Analysis">
+                <p>Full project · PDF · 54 pages · 101.5 MB</p>
+                <div class="project-file-actions"><a class="text-link" href="documents/International_Air_Travel_Demand_Presentation.pdf" target="_blank" rel="noopener">Read full project<span class="sr-only">: International Air Travel Demand Analysis (opens in a new tab)</span></a><a class="text-link" href="documents/International_Air_Travel_Demand_Presentation.pdf" download>Download PDF<span class="sr-only">: International Air Travel Demand Analysis</span></a></div>
+              </div>
+              <details class="project-details"><summary>Read project details</summary><dl><dt>Context</dt><dd>Assess demand for international routes from Khon Kaen to the Greater Mekong Subregion.</dd><dt>My contribution</dt><dd>Analyzed passenger demand, regional travel corridors, seasonal patterns, and the economic implications of route development.</dd><dt>Output</dt><dd>Market analysis and route-development recommendations for Khon Kaen Airport.</dd></dl></details>
+            <div class="project-tags"><span>Demand Analysis</span><span>Market Research</span><span>Transport Economics</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <h2 id="skills-title">Tools I work with</h2>
+        <p>Apps and platforms I use across automation, research, and presentation projects.</p>
+      </div>
+
+      <div class="skills-showcase" aria-label="Apps and platforms">
+        <div class="skills-marquee" data-marquee>
+          <div class="skills-track">
+          <div class="skills-group">
+            <div class="skill-app" style="--app-color:#ea4b71"><span class="skill-app-icon" aria-hidden="true"><img src="assets/icons/n8n.svg" alt="" width="32" height="32" /></span><span>n8n</span></div>
+            <div class="skill-app" style="--app-color:#714b67"><span class="skill-app-icon" aria-hidden="true"><img src="assets/icons/odoo.svg" alt="" width="32" height="32" /></span><span>Odoo</span></div>
+            <div class="skill-app" style="--app-color:#7d2ae8"><span class="skill-app-icon" aria-hidden="true"><img src="assets/icons/canva.svg" alt="" width="32" height="32" /></span><span>Canva</span></div>
+            <div class="skill-app" style="--app-color:#2b579a"><span class="skill-app-icon" aria-hidden="true"><img src="assets/icons/word.svg" alt="" width="32" height="32" /></span><span>Microsoft Word</span></div>
+            <div class="skill-app" style="--app-color:#217346"><span class="skill-app-icon skill-app-icon-pair" aria-hidden="true"><img src="assets/icons/excel.svg" alt="" width="28" height="28" /><img src="assets/icons/googlesheets.svg" alt="" width="28" height="28" /></span><span>Excel &amp; Google Sheets</span></div>
+            <div class="skill-app" style="--app-color:#d24726"><span class="skill-app-icon" aria-hidden="true"><img src="assets/icons/powerpoint.svg" alt="" width="32" height="32" /></span><span>PowerPoint</span></div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-motion-controls"><p class="skills-note">Hover to pause the animation and take a closer look.</p></div>
+
+      <div class="capabilities" aria-labelledby="capabilities-title">
+        <h3 id="capabilities-title">Skills &amp; strengths</h3>
+        <ul class="capability-list">
+          <li><span>Workflow Automation</span><small>Automation</small></li>
+          <li><span>AI Prompt Engineering</span><small>Automation</small></li>
+          <li><span>Webhook Integration</span><small>Technical</small></li>
+          <li><span>Python Basics</span><small>Technical</small></li>
+          <li><span>Market Analysis</span><small>Research</small></li>
+          <li><span>Consumer Behavior</span><small>Research</small></li>
+          <li><span>Data Storytelling</span><small>Communication</small></li>
+          <li><span>Infographic Design</span><small>Communication</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="documents" aria-labelledby="documents-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="documents-title">Resume &amp; certificates</h2><p>Download my resume, full portfolio, and supporting certificates.</p></div>
+        <div class="document-list">
+          <article><div><h3>Resume</h3><p>Experience, education, and skills · PDF</p></div><a class="button button-secondary" href="documents/Resume_Nathaphat_Lappanopakorn.pdf" download>Download Resume</a></article>
+          <article><div><h3>Full portfolio</h3><p>Project summaries and background · PDF, 6 pages</p></div><a class="button button-secondary" href="Portfolio_Nathaphat_lappanopakorn.pdf" download>Download Portfolio</a></article>
+          <article><div><h3>Internship certificate</h3><p>Klangone · Professional Programmer Internship Program<br />1 April – 23 May 2025 · PNG</p></div><a class="button button-secondary" href="documents/Internship_Certificate_Nathaphat.png" download>Download internship certificate</a></article>
+          <article><div><h3>Graduation certificate</h3><p>Khon Kaen University · Bachelor of Economics · PDF</p></div><a class="button button-secondary" href="documents/Graduation_Certificate_Nathaphat.pdf" download>Download graduation certificate</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div>
+          <h2 id="contact-title">Let’s talk about your next project.</h2>
+          <p>For roles or projects in automation, research, or product development, contact me by email or phone.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-link" href="mailto:Lap.natthaphat@gmail.com"><span>Email</span><strong>Lap.natthaphat@gmail.com</strong></a>
+          <a class="contact-link" href="tel:+66966625606"><span>Phone</span><strong>096-662-5606</strong></a>
+          <div class="contact-link"><span>Based in</span><strong>Ratchaburi, Thailand</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-brand"><img src="assets/logo-nl.svg" width="30" height="30" alt="" />© <span id="year"></span> Nathaphat Lappanopakorn.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
+
